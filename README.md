@@ -1,5 +1,5 @@
 # Star Wars
-Welcome to the Star Wars repository! This project is a showcase of proficiency in using various JavaScript array methods. Through a series of examples and implementations inspired by the Star Wars universe, this repository highlights effective use of common and advanced array operations.
+Welcome to my Star Wars repository! This project is a showcase of proficiency in using various ***JavaScript array methods***. Through a series of examples and implementations inspired by the Star Wars universe, this repository highlights effective use of common and advanced array operations.
 
 ## Features
 **Array Iteration:** Demonstrates the use of forEach, map, and reduce to iterate over Star Wars character data and perform calculations or transformations.
@@ -13,3 +13,6 @@ Welcome to the Star Wars repository! This project is a showcase of proficiency i
 
 > "I've found that what most people call luck is often little more than raw talent combined with the ability to make the most of opportunities" 
 - Talon Karrde
+
+
+![Star Wars title image](./title.jpg)
