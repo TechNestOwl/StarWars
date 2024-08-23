@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link  rel='stylesheet' href="./array_arithmetic.css"/>
+       
+    <style>
+        .card-custom {
+            border: none;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgb(255, 252, 252);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .divider {
+            width: 100px;
+            height: 4px;
+            background-color: #282829;
+            margin: 15px auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield"></div>
+        <div id="mainContent">
+            <div id="inputContainer" class="search-container">
+                <h1 id="starWars">Search a galaxy far, far away...</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Name a Star Wars character...">
+                        <button class="btn btn-search" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+            <!-- <div id="resultsBox">
+        
+                <div class="container mt-5">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Card Image">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            <div class="divider"></div>
+                            <p class="card-text">Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <button id="open-card">Show Info Card</button>
+
+            <div id="info-card" class="info-card displayCard">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <div class="description">
+                    <h3>Title</h3>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+                    <p>Maecenas malesuada lacus sit amet enim maximus, nec interdum libero facilisis. Aliquam erat volutpat. Fusce varius, turpis vel tristique dapibus, ligula sapien malesuada urna, id tincidunt augue urna eget lacus.</p>
+                </div>
+            <button id="close-card">Close Info Card</button>
+
+            </div>
+
+        </div>
+
+      <!-- Hidden Button -->
+      <button class="hidden-btn" data-bs-toggle="modal" data-bs-target="#characterModal">
+        Characters
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="characterModalLabel">Roster To Choose From</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Luke Skywalker is a Jedi Knight who played a pivotal role in the defeat of the Galactic Empire. He is the son of Anakin Skywalker (Darth Vader) and Padmé Amidala, and the twin brother of Leia Organa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // create stars dynamically
+        const starfield = document.querySelector('.starfield');
+
+        for (let i = 0; i < 150; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDuration = `${Math.random() * 3 + 1}s`;
+            starfield.appendChild(star);
+        }
+    </script>
+</body>
+</html>
+
+<script src="./filterMethod.js"></script>
