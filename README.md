@@ -1,7 +1,7 @@
-#A Star Wars
+# Star Wars
 Welcome to the Star Wars repository! This project is a showcase of proficiency in using various JavaScript array methods. Through a series of examples and implementations inspired by the Star Wars universe, this repository highlights effective use of common and advanced array operations.
 
-##A Features
+## Features
 **Array Iteration:** Demonstrates the use of forEach, map, and reduce to iterate over Star Wars character data and perform calculations or transformations.
 
 **Filtering & Searching:** Utilizes filter, find, and some to search through arrays, filter data based on specific criteria, and validate conditions.
