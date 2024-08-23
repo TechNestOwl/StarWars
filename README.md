@@ -11,8 +11,7 @@ Welcome to my Star Wars repository! This project is a showcase of proficiency in
 **Data Transformation:** Explores map and reduce to convert and aggregate data, such as transforming character data into a new format or calculating the total count of Jedi and Sith.
 
 
-> "I've found that what most people call luck is often little more than raw talent combined with the ability to make the most of opportunities" 
-- Talon Karrde
+> "I've found that what most people call luck is often little more than raw talent combined with the ability to make the most of opportunities" - Talon Karrde
 
 
 ![Star Wars title image](./title.jpg)
