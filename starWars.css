@@ -182,6 +182,9 @@ p {
     transition: opacity 0.5s ease-out;
 }
 
+/* 
+have this card be off screen, when clicked changed position to fixed
+ */
 #close-card{
     position:fixed;
     bottom: 10px;
@@ -196,6 +199,6 @@ p {
 }
 #close-card:hover{
     opacity: .95;
-    color: #f7ef1071;
+    color: #f7ef1084;
     background-color: rgb(24, 24, 24);
 }

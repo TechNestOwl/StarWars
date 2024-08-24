@@ -83,6 +83,45 @@ const characters = [
 ];
 
 
+
+
+
+
+
+
+const triggerSearch = (event) => {   
+    event.preventDefault();
+    let userInput = document.getElementById("charSearchByName").value;
+
+
+    console.log("You searched for: " + userInput);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //***MAP***
 //1. Get array of all names
 //2. Get array of all species and their homeworld
@@ -153,6 +192,7 @@ let droids = characters.filter(char => char.role.includes("Droid"));
 
 
 
+
 //***SORT***
 //1. Sort by mass
 //2. Sort by height
@@ -170,3 +210,5 @@ let droids = characters.filter(char => char.role.includes("Droid"));
 //2. Is there at least one character with blue eyes?
 //3. Is there at least one character taller than 210?
 //4. Is there at least one character that has mass less than 50?
+
+
