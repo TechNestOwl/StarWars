@@ -8,7 +8,7 @@
     align-items: center;
     background: black;
     overflow: hidden;
-    font-family: 'Star Jedi', sans-serif;
+    font-family: sans-serif;
 
 }
 
@@ -44,7 +44,7 @@
 }
 
 .search-container h1 {
-    font-family: 'Star Jedi', sans-serif;
+    font-family: sans-serif;
     color: #f7ef10;
     margin-bottom: 40px;
     font-size: 3rem;
@@ -79,13 +79,13 @@
     box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
     transform: scale(1.1);
 }
-
+/* 
 @font-face {
     font-family: 'Star Jedi';
     src: url('https://www.fontsaddict.com/fontface/star-jedi') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
  /* Hidden Button */
  .hidden-btn {
@@ -201,16 +201,4 @@ have this card be off screen, when clicked changed position to fixed
     opacity: .95;
     color: #f7ef1084;
     background-color: rgb(24, 24, 24);
-}
-
-#resetButton {
-    background-color: #FF6F61;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
