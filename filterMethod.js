@@ -89,14 +89,14 @@ const characters = [
 
 
 
-
-
 const triggerSearch = () => {   
     event.preventDefault();
     let userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
 
    let charOutput = characters.filter((char)=> char.name == userInput); // fitlering thrugh charactes array for name matching user input
 
+    
+    document.getElementById("resultsName").innerHTML = `${userInput}`;
 
     console.log(charOutput);
 };
@@ -140,6 +140,8 @@ characters.map((i)=>{
 
 //simplier method
 let planets = characters.map(i => i.homeworld);
+
+
 
 
 //2:
