@@ -90,13 +90,19 @@ const characters = [
 
 
 const triggerSearch = () => {   
-    event.preventDefault();
     let userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
 
-   let charOutput = characters.filter((char)=> char.name == userInput); // fitlering thrugh charactes array for name matching user input
+   characters.map((char) =>{
+        if(char.name == userInput){
+            document.getElementById("resultsName").innerHTML = `${char.name}`;
+            document.getElementById("resultsRole").innerHTML = `${char.role}`;
+            document.getElementById("resultsAffiliation").innerHTML = `${char.affiliation}`;
+            document.getElementById("resultsSpecies").innerHTML = `${char.species}`;
+            document.getElementById("resultsHomeworld").innerHTML = `${char.homeworld}`;
+            return
+        }
+    }); // fitlering thrugh charactes array for name matching user input
 
-    
-    document.getElementById("resultsName").innerHTML = `${userInput}`;
 
     console.log(charOutput);
 };
