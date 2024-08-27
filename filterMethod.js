@@ -8,6 +8,10 @@ const toggleView = ()=>{
 document.getElementById("open-card").addEventListener("click", toggleView);
 document.getElementById("close-card").addEventListener("click", toggleView);
 
+document.getElementById("resetButton").addEventListener("click", ()=>{
+    location.reload();
+});
+
 
 const characters = [
     {
@@ -83,6 +87,8 @@ const characters = [
 ];
 
 
+let userInput = document.getElementById("charSearchByName").value;
+
 
 
 
@@ -91,10 +97,9 @@ const characters = [
 
 const triggerSearch = (event) => {   
     event.preventDefault();
-    let userInput = document.getElementById("charSearchByName").value;
 
-
-    console.log("You searched for: " + userInput);
+   
+    console.log("You searched for: " + userInputt);
 };
 
 

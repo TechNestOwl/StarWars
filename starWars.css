@@ -202,3 +202,15 @@ have this card be off screen, when clicked changed position to fixed
     color: #f7ef1084;
     background-color: rgb(24, 24, 24);
 }
+
+#resetButton {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
