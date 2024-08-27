@@ -5,7 +5,7 @@ const toggleView = ()=>{
     document.getElementById("inputContainer").classList.toggle("hideItAll");
 }
 
-document.getElementById("open-card").addEventListener("click", toggleView);
+document.getElementById("searchBtn").addEventListener("click", toggleView);
 document.getElementById("close-card").addEventListener("click", toggleView);
 
 

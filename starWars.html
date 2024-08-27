@@ -13,11 +13,12 @@
     
     <div class="starfield"></div>
         <div id="mainContent">
+            <!-- Input -->
             <div id="inputContainer" class="search-container">
                 <h1 id="starWars">Search a galaxy far, far away...</h1>
                 <form>
                     <div class="input-group">
-                        <input id="charSearchByName" type="text" class="form-control" placeholder="Name a Star Wars character...">
+                        <input id="charSearchByName" type="text" class="form-control" placeholder="Star Wars character by first name...">
                         <button id="searchBtn" class="btn btn-search" type="button" onclick="triggerSearch()">Search</button>
                     </div> 
                 </form>
@@ -25,8 +26,8 @@
         
 
 
+
             <!-- Results Card -->
-            <button id="open-card">Show Info Card</button>
 
             <div id="info-card" class="info-card displayCard">
                 <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
@@ -44,6 +45,10 @@
             </div>
 
         </div>
+
+
+
+
 
       <!-- Hidden Button -->
       <button class="hidden-btn" data-bs-toggle="modal" data-bs-target="#characterModal">
