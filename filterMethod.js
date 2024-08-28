@@ -204,7 +204,21 @@ const triggerSearch = () => {
 
 
 
+// Add characters to roster
 
+const charNames = characters.map((char) => {
+   return char.name;
+});// creating an array with names of the characters 
+
+
+const unorderedList = document.getElementById("charRoster");
+
+charNames.forEach( i => {
+    const li = document.createElement("li");
+    li.className = "list-group"; // adding the bootstrap
+    li.textContent = i;
+    unorderedList.appendChild(li); //adding li into my unorderedList variable
+});
 
 
 

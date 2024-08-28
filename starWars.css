@@ -109,9 +109,11 @@
 
 /* Modal Styles */
 .modal-content {
-    background-color: #424040;
-    color: white;
-    border-radius: 10px;
+    background-color: #343a40;
+    color: #343a40;
+    padding: 0.5rem;
+    border: 1px solid #646464;
+    border-radius: 3rem;
 }
 
 .modal-header {
@@ -121,14 +123,17 @@
 .modal-body {
     color: #ddd;
 }
+.modal-title{
+    color: #0064ce;
 
+}
 
 /* Info card */
 
 .info-card {
     background-color: #3d3c3c;;
     color:white;
-    border-radius: 10px;
+    border-radius: 2rem;
     overflow: hidden;
     max-width: 300px;
     position:fixed;
