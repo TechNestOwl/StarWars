@@ -16,70 +16,160 @@ const characters = [
         role: "Jedi Knight",
         affiliation: "Rebel Alliance",
         species: "Human",
-        homeworld: "Tatooine"
+        homeWorld: "Tatooine",
+        summary: "The son of Anakin Skywalker, Luke becomes a key figure in the Rebel Alliance and helps defeat the Galactic Empire."
     },
     {
         name: "Darth Vader",
         role: "Sith Lord",
         affiliation: "Galactic Empire",
         species: "Human",
-        homeworld: "Tatooine"
+        homeWorld: "Tatooine",
+        summary: "Formerly Anakin Skywalker, Darth Vader is a powerful Sith Lord who serves the Emperor and seeks to crush the Rebel Alliance."
     },
     {
         name: "Leia Organa",
-        role: "Princess",
+        role: "Princess / General",
         affiliation: "Rebel Alliance",
         species: "Human",
-        homeworld: "Alderaan"
+        homeWorld: "Alderaan",
+        summary: "A leader in the Rebel Alliance, Leia is the twin sister of Luke Skywalker and a skilled diplomat and warrior."
     },
     {
         name: "Han Solo",
-        role: "Smuggler",
+        role: "Smuggler / Captain",
         affiliation: "Rebel Alliance",
         species: "Human",
-        homeworld: "Corellia"
+        homeWorld: "Corellia",
+        summary: "A rogue smuggler turned hero, Han Solo becomes a key member of the Rebel Alliance and captain of the Millennium Falcon."
     },
     {
         name: "Yoda",
         role: "Jedi Master",
         affiliation: "Jedi Order",
-        species: "Yoda's species",
-        homeworld: "Unknown"
+        species: "Unknown",
+        homeWorld: "Unknown",
+        summary: "A wise and powerful Jedi Master, Yoda serves as a mentor to many Jedi, including Luke Skywalker."
     },
     {
         name: "Obi-Wan Kenobi",
         role: "Jedi Master",
         affiliation: "Jedi Order",
         species: "Human",
-        homeworld: "Stewjon"
-    },
-    {
-        name: "Chewbacca",
-        role: "Co-pilot",
-        affiliation: "Rebel Alliance",
-        species: "Wookiee",
-        homeworld: "Kashyyyk"
+        homeWorld: "Stewjon",
+        summary: "A dedicated Jedi Master, Obi-Wan trains Anakin Skywalker and later helps guide Luke in his journey to becoming a Jedi."
     },
     {
         name: "Emperor Palpatine",
-        role: "Emperor",
+        role: "Emperor / Sith Lord",
         affiliation: "Galactic Empire",
         species: "Human",
-        homeworld: "Naboo"
+        homeWorld: "Naboo",
+        summary: "The mastermind behind the rise of the Galactic Empire, Palpatine is a Sith Lord who seeks to rule the galaxy."
+    },
+    {
+        name: "Chewbacca",
+        role: "Co-pilot / Warrior",
+        affiliation: "Rebel Alliance",
+        species: "Wookiee",
+        homeWorld: "Kashyyyk",
+        summary: "A loyal friend to Han Solo, Chewbacca is a Wookiee warrior and co-pilot of the Millennium Falcon."
     },
     {
         name: "R2-D2",
         role: "Astromech Droid",
         affiliation: "Rebel Alliance",
         species: "Droid",
-        homeworld: "Naboo"
+        homeWorld: "Naboo",
+        summary: "A resourceful astromech droid, R2-D2 plays a crucial role in many key events of the Star Wars saga."
     },
     {
         name: "C-3PO",
         role: "Protocol Droid",
         affiliation: "Rebel Alliance",
         species: "Droid",
-        homeworld: "Tatooine"
+        homeWorld: "Tatooine",
+        summary: "A protocol droid fluent in over six million forms of communication, C-3PO is often found at R2-D2's side."
+    },
+    {
+        name: "Boba Fett",
+        role: "Bounty Hunter",
+        affiliation: "Independent",
+        species: "Human (clone)",
+        homeWorld: "Kamino",
+        summary: "A notorious bounty hunter, Boba Fett is feared throughout the galaxy for his deadly skills and unrelenting pursuit of targets."
+    },
+    {
+        name: "Lando Calrissian",
+        role: "Gambler / General",
+        affiliation: "Rebel Alliance",
+        species: "Human",
+        homeWorld: "Socorro",
+        summary: "A suave gambler and businessman, Lando becomes a General in the Rebel Alliance and helps in the fight against the Empire."
+    },
+    {
+        name: "Rey",
+        role: "Jedi",
+        affiliation: "Resistance",
+        species: "Human",
+        homeWorld: "Jakku",
+        summary: "A scavenger from Jakku, Rey discovers her connection to the Force and becomes a key figure in the Resistance against the First Order."
+    },
+    {
+        name: "Kylo Ren",
+        role: "Supreme Leader",
+        affiliation: "First Order",
+        species: "Human",
+        homeWorld: "Chandrila",
+        summary: "The son of Han Solo and Leia Organa, Kylo Ren is a powerful Force user who leads the First Order in its quest to dominate the galaxy."
+    },
+    {
+        name: "Padmé Amidala",
+        role: "Queen / Senator",
+        affiliation: "Galactic Republic",
+        species: "Human",
+        homeWorld: "Naboo",
+        summary: "A former Queen of Naboo, Padmé becomes a senator and fights for peace and democracy during the Clone Wars."
+    },
+    {
+        name: "Darth Maul",
+        role: "Sith Lord",
+        affiliation: "Sith",
+        species: "Zabrak",
+        homeWorld: "Dathomir",
+        summary: "A fierce Sith warrior trained by Darth Sidious, Darth Maul is known for his menacing appearance and deadly combat skills."
+    },
+    {
+        name: "Ahsoka Tano",
+        role: "Jedi Padawan",
+        affiliation: "Jedi Order / Rebel Alliance",
+        species: "Togruta",
+        homeWorld: "Shili",
+        summary: "A former Jedi Padawan to Anakin Skywalker, Ahsoka becomes a key figure in the early days of the Rebel Alliance."
+    },
+    {
+        name: "Mace Windu",
+        role: "Jedi Master",
+        affiliation: "Jedi Order",
+        species: "Human",
+        homeWorld: "Haruun Kal",
+        summary: "A senior member of the Jedi Council, Mace Windu is one of the most powerful Jedi during the Clone Wars."
+    },
+    {
+        name: "Qui-Gon Jinn",
+        role: "Jedi Master",
+        affiliation: "Jedi Order",
+        species: "Human",
+        homeWorld: "Coruscant",
+        summary: "A wise and maverick Jedi Master, Qui-Gon Jinn discovers Anakin Skywalker and believes him to be the Chosen One."
+    },
+    {
+        name: "Jar Jar Binks",
+        role: "Gungan Representative",
+        affiliation: "Galactic Republic",
+        species: "Gungan",
+        homeWorld: "Naboo",
+        summary: "A clumsy yet well-meaning Gungan, Jar Jar Binks plays a surprising role in the rise of the Galactic Empire."
     }
 ];
 
@@ -98,7 +188,8 @@ const triggerSearch = () => {
             document.getElementById("resultsRole").innerHTML = `${char.role}`;
             document.getElementById("resultsAffiliation").innerHTML = `${char.affiliation}`;
             document.getElementById("resultsSpecies").innerHTML = `${char.species}`;
-            document.getElementById("resultsHomeworld").innerHTML = `${char.homeworld}`;
+            document.getElementById("resultsHomeworld").innerHTML = `${char.homeWorld}`;
+            document.getElementById("resultsSummary").innerHTML = `${char.summary}`;
             return
         }
     }); // fitlering thrugh charactes array for name matching user input
