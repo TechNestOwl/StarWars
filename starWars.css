@@ -19,7 +19,6 @@
     z-index: -1;
 }
 
-
 .star {
     position: absolute;
     background: white;
@@ -127,7 +126,7 @@
 /* Info card */
 
 .info-card {
-    background-color: #262525;;
+    background-color: #3d3c3c;;
     color:white;
     border-radius: 10px;
     overflow: hidden;
@@ -138,17 +137,27 @@
     transform: translate(-50%, -50%);
     z-index: 1000;
     margin-top: 300px;
+    opacity:0;
 }
 
 .info-card:hover {
     box-shadow: 0 0 10px #302406, 0 0 20px #6f6c0d, 0 0 30px #3f3e05;
 }
 
+/* transitions */
+
 .displayCard {
+    opacity: 10;
+    margin-bottom: 300px;
+    transform: translate(-50%, -100%);
+    transition: opacity 2s ease;
+}
+
+.hideItAll{
     opacity: 0;
-    /* margin-top: 0; */
-    transition: opacity 0.3s ease-out;
-    /* transition: opacity 0.3s ease-out, margin-top 2s ease; */
+    margin-bottom: 700px;
+    transition: margin-bottom 2s ease, opacity 2s ease-out;
+
 }
 
 img {
@@ -181,12 +190,6 @@ p {
     line-height: 1.5em;
 }
 
-.hideItAll{
-    opacity: 0;
-    margin-bottom: 700px;
-    transition: margin-bottom 2s ease, opacity 2s ease-out;
-
-}
 
 /* 
 have this card be off screen, when clicked changed position to fixed
