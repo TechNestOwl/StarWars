@@ -224,3 +224,4 @@ let droids = characters.filter(char => char.role.includes("Droid"));
 //4. Is there at least one character that has mass less than 50?
 
 
+let lukeAI = "Luke Skywalker is a Jedi Knight who played a pivotal role in the defeat of the Galactic Empire. He is the son of Anakin Skywalker (Darth Vader) and Padmé Amidala, and the twin brother of Leia Organa."

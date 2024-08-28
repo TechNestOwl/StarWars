@@ -145,8 +145,9 @@
 
 .displayCard {
     opacity: 0;
-    margin-bottom: 300px;
-    transition: opacity 0.5s ease-out;
+    /* margin-top: 0; */
+    transition: opacity 0.3s ease-out;
+    /* transition: opacity 0.3s ease-out, margin-top 2s ease; */
 }
 
 img {
