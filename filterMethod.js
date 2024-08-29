@@ -9,6 +9,18 @@ document.getElementById("searchBtn").addEventListener("click", toggleView);
 document.getElementById("close-card").addEventListener("click", toggleView);
 
 
+const starfield = document.querySelector('.starfield');
+
+//Stars
+for (let i = 0; i < 150; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}vw`;
+    star.style.animationDuration = `${Math.random() * 3 + 1}s`;
+    starfield.appendChild(star);
+}
+
 
 const characters = [
     {
@@ -17,7 +29,7 @@ const characters = [
         affiliation: "Rebel Alliance",
         species: "Human",
         homeWorld: "Tatooine",
-        summary: "The son of Anakin Skywalker, Luke becomes a key figure in the Rebel Alliance and helps defeat the Galactic Empire."
+        summary: "Luke Skywalker, a humble farm boy from Tatooine, becomes a legendary Jedi Knight and the key figure in the battle against the Galactic Empire. Guided by mentors like Obi-Wan Kenobi and Yoda, he learns the ways of the Force and discovers his true heritage as the son of Darth Vader. Luke plays a pivotal role in the Rebel Alliance's victory, ultimately redeeming his father and bringing balance to the Force. His journey embodies the classic hero's arc, transforming from an ordinary individual into a symbol of hope and resilience for the galaxy."
     },
     {
         name: "Darth Vader",
@@ -47,8 +59,8 @@ const characters = [
         name: "Yoda",
         role: "Jedi Master",
         affiliation: "Jedi Order",
-        species: "Unknown",
-        homeWorld: "Unknown",
+        species: "I have no idea..",
+        homeWorld: "Unknown..",
         summary: "A wise and powerful Jedi Master, Yoda serves as a mentor to many Jedi, including Luke Skywalker."
     },
     {
@@ -326,7 +338,3 @@ let droids = characters.filter(char => char.role.includes("Droid"));
 //1. Is there at least one male character?
 //2. Is there at least one character with blue eyes?
 //3. Is there at least one character taller than 210?
-//4. Is there at least one character that has mass less than 50?
-
-
-let lukeAI = "Luke Skywalker is a Jedi Knight who played a pivotal role in the defeat of the Galactic Empire. He is the son of Anakin Skywalker (Darth Vader) and Padmé Amidala, and the twin brother of Leia Organa."

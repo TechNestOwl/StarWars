@@ -211,7 +211,7 @@ p {
     height: 100%;
 }
 #close-card:hover{
-    opacity: .95;
-    color: #f7ef1084;
+    opacity: .92;
+    color: #f7ef10;
     background-color: rgb(24, 24, 24);
 }
