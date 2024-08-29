@@ -26,7 +26,6 @@ for(let p = 0; p < 10; p++){
     planet.className = "planet";
     planet.style.top = `${Math.random() * 100}vh`;
     planet.style.left = `${Math.random() * 100}vw`;
-    planet.style.animationDuration = `${Math.random() * 3 + 1}s`
     starfield.appendChild(planet);
 }
 
@@ -194,7 +193,15 @@ const characters = [
 ];
 
 const triggerSearch = () => {   
+
+    
     let userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
+
+    if(userInput == ""){
+        alert("input field is empty")
+        // document.getElementById("infoCardDescription").classList.toggle("hideInfoCard");
+        return
+    }
 
    characters.map((char) =>{
         if(char.name == userInput){
@@ -206,10 +213,10 @@ const triggerSearch = () => {
             document.getElementById("resultsSummary").innerHTML = `${char.summary}`;
             return
         }
-    }); // fitlering thrugh charactes array for name matching user input
+    }); // filtering thru characters array for name matching user input
 
 
-    console.log(charOutput);
+    // console.log(charOutput);
 };
 
 
