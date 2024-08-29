@@ -21,6 +21,14 @@ for (let i = 0; i < 500; i++) {
     starfield.appendChild(star);
 }
 
+for(let p = 0; p < 10; p++){
+    const planet = document.createElement('div');
+    planet.className = "planet";
+    planet.style.top = `${Math.random() * 100}vh`;
+    planet.style.left = `${Math.random() * 100}vw`;
+    planet.style.animationDuration = `${Math.random() * 3 + 1}s`
+    starfield.appendChild(planet);
+}
 
 const characters = [
     {

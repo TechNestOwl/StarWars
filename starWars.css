@@ -27,6 +27,14 @@
     height: 2px;
     animation: twinkle 2s infinite ease-in-out;
 }
+.planet {
+    position: absolute;
+    background: rgb(82, 37, 25);
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    /* animation: twinkle 2s infinite ease-in-out; */
+}
 
 @keyframes twinkle {
     0%, 100% {
