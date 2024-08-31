@@ -197,12 +197,6 @@ const triggerSearch = () => {
     
     let userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
 
-    if(userInput == ""){
-        alert("input field is empty")
-        // document.getElementById("infoCardDescription").classList.toggle("hideInfoCard");
-        return
-    }
-
    characters.map((char) =>{
         if(char.name == userInput){
             document.getElementById("resultsName").innerHTML = `${char.name}`;
@@ -218,12 +212,6 @@ const triggerSearch = () => {
 
     // console.log(charOutput);
 };
-
-
-
-
-
-
 
 // Add characters to roster
 
