@@ -192,10 +192,12 @@ const characters = [
     }
 ];
 
+
+
 const triggerSearch = () => {   
 
+const userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
     
-    let userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
 
    characters.map((char) =>{
         if(char.name == userInput){
@@ -212,6 +214,19 @@ const triggerSearch = () => {
 
     // console.log(charOutput);
 };
+
+    document.getElementById("myButton").onclick = function() {
+        var inputField = document.getElementById("myInput").value;
+        
+        if (inputField === "") {
+            alert("The input field is empty. Please enter something.");
+            return false; // Prevents the event from firing further
+        }
+        
+        // Proceed with the event if the input is not empty
+        console.log("Input field is not empty. Event fired.");
+    };
+    
 
 // Add characters to roster
 

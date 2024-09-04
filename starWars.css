@@ -228,3 +228,49 @@ p {
     color: #f7ef10;
     background-color: rgb(24, 24, 24);
 }
+.alternative-search-btn {
+
+    background: linear-gradient(135deg, #ff007f 0%, #ff7f00 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .alternative-search-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.6s ease;
+  }
+  
+  .alternative-search-btn:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  .alternative-search-btn:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  .alternative-search-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
