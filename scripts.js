@@ -1,16 +1,6 @@
-// Array filter()
 
-const toggleView = ()=>{
-    document.getElementById("info-card").classList.toggle("displayCard");
-    document.getElementById("inputContainer").classList.toggle("hideItAll");
-}
-
-document.getElementById("searchBtn").addEventListener("click", toggleView);
-document.getElementById("close-card").addEventListener("click", toggleView);
-
-
-//galaxy background
 const starfield = document.querySelector('.starfield');
+
 
 for (let i = 0; i < 500; i++) {
     const star = document.createElement('div');
@@ -28,6 +18,7 @@ for(let p = 0; p < 10; p++){
     planet.style.left = `${Math.random() * 100}vw`;
     starfield.appendChild(planet);
 }
+
 
 const characters = [
     {
@@ -193,12 +184,10 @@ const characters = [
 ];
 
 
-const triggerSearch = () => {   
 
-const userInput = document.getElementById("charSearchByName").value;//grabing user input ( character name)
-    
+const triggerSearch = (userInput) => {
 
-   characters.map((char) =>{
+    characters.map((char) =>{
         if(char.name == userInput){
             document.getElementById("resultsName").innerHTML = `${char.name}`;
             document.getElementById("resultsRole").innerHTML = `${char.role}`;
@@ -207,51 +196,21 @@ const userInput = document.getElementById("charSearchByName").value;//grabing us
             document.getElementById("resultsHomeworld").innerHTML = `${char.homeWorld}`;
             document.getElementById("resultsSummary").innerHTML = `${char.summary}`;
             return
-        }
-    }); // filtering thru characters array for name matching user input
-
-
-    // console.log(charOutput);
+        };
+    });
 };
+let inputField = document.getElementById("charSearchByName")
 
-    document.getElementById("myButton").onclick = function() {
-        var inputField = document.getElementById("myInput").value;
+console.log(inputField);
+
+document.getElementById("searchBtn").onClick = function (){
+
+    if(inputField == ""){
+        alert("The input field is empty. Please enter a charcters name");
+        console.log(inputField)
+    }else{
         
-        if (inputField === "") {
-            alert("The input field is empty. Please enter something.");
-            return false; // Prevents the event from firing further
-        }
-        
-        // Proceed with the event if the input is not empty
+        triggerSearch(inputField);
         console.log("Input field is not empty. Event fired.");
-    };
-    
-
-// Add characters to roster
-
-const charNames = characters.map((char) => {
-   return char.name;
-});// creating an array with names of the characters 
-
-
-const unorderedList = document.getElementById("charRoster");
-
-charNames.forEach( i => {
-    const li = document.createElement("li");
-    li.className = "list-group"; // adding the bootstrap
-    li.textContent = i;
-    unorderedList.appendChild(li); //adding li into my unorderedList variable
-});
-
-
-
-
-let heros = characters.filter( character => {
-
-    if(character.affiliation == "Rebel Alliance"){
-        return character; // if condition is true, current character will pass the filter and be added to heros array
-    };
-});
-let scum = characters.filter(character => character.affiliation == "Galactic Empire");
-
-let droids = characters.filter(char => char.role.includes("Droid"));
+    }
+}
