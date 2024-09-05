@@ -19,7 +19,6 @@ for(let p = 0; p < 10; p++){
     starfield.appendChild(planet);
 }
 
-
 const characters = [
     {
         name: "Luke Skywalker",
@@ -187,6 +186,7 @@ const characters = [
 
 const triggerSearch = (userInput) => {
 
+
     characters.map((char) =>{
         if(char.name == userInput){
             document.getElementById("resultsName").innerHTML = `${char.name}`;
@@ -199,7 +199,7 @@ const triggerSearch = (userInput) => {
         };
     });
 };
-let inputField = document.getElementById("charSearchByName")
+let inputField = document.getElementById("charSearchByName").value;
 
 console.log(inputField);
 
@@ -214,3 +214,9 @@ document.getElementById("searchBtn").onClick = function (){
         console.log("Input field is not empty. Event fired.");
     }
 }
+
+
+// Add characters to roster
+const charNames = characters.map((char) => {
+    return char.name;
+ });
