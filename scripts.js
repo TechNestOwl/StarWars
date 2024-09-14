@@ -1,7 +1,6 @@
 
 const starfield = document.querySelector('.starfield');
 
-
 for (let i = 0; i < 500; i++) {
     const star = document.createElement('div');
     star.className = 'star';
@@ -182,10 +181,7 @@ const characters = [
     }
 ];
 
-
-
 const triggerSearch = (userInput) => {
-
 
     characters.map((char) =>{
         if(char.name == userInput){
@@ -209,14 +205,22 @@ document.getElementById("searchBtn").onClick = function (){
         alert("The input field is empty. Please enter a charcters name");
         console.log(inputField)
     }else{
-        
         triggerSearch(inputField);
         console.log("Input field is not empty. Event fired.");
     }
 }
 
-
 // Add characters to roster
 const charNames = characters.map((char) => {
     return char.name;
  });
+
+ let heros = characters.filter( character => {
+
+    if(character.affiliation == "Rebel Alliance"){
+        return character; // if condition is true, current character will pass the filter and be added to heros array
+    };
+});
+let scum = characters.filter(character => character.affiliation == "Galactic Empire");
+
+let droids = characters.filter(char => char.role.includes("Droid"));
