@@ -182,7 +182,6 @@ const characters = [
 ];
 
 const triggerSearch = (userInput) => {
-
     characters.map((char) =>{
         if(char.name == userInput){
             document.getElementById("resultsName").innerHTML = `${char.name}`;
@@ -195,12 +194,11 @@ const triggerSearch = (userInput) => {
         };
     });
 };
-let inputField = document.getElementById("charSearchByName").value;
 
-console.log(inputField);
 
-document.getElementById("searchBtn").onClick = function (){
-
+document.getElementById("searchBtn").onclick = function (){
+    
+    let inputField = document.getElementById("charSearchByName").value;
     if(inputField == ""){
         alert("The input field is empty. Please enter a charcters name");
         console.log(inputField)
