@@ -190,21 +190,26 @@ const triggerSearch = (userInput) => {
             document.getElementById("resultsSpecies").innerHTML = `${char.species}`;
             document.getElementById("resultsHomeworld").innerHTML = `${char.homeWorld}`;
             document.getElementById("resultsSummary").innerHTML = `${char.summary}`;
+
+            //display result card and hide input container
+            document.getElementById("info-card").classList.toggle("displayCard");
+            document.getElementById("inputContainer").classList.toggle("hideItAll");
             return
         };
     });
+    document.getElementById("info-car")
 };
 
-
+//trigger search
 document.getElementById("searchBtn").onclick = function (){
     
     let inputField = document.getElementById("charSearchByName").value;
     if(inputField == ""){
-        alert("The input field is empty. Please enter a charcters name");
+        alert("The input field is empty. Please enter a character's name");
         console.log(inputField)
     }else{
         triggerSearch(inputField);
-        console.log("Input field is not empty. Event fired.");
+        console.log("Input read. Event fired.");
     }
 }
 
