@@ -202,7 +202,6 @@ const triggerSearch = (userInput) => {
 
 //trigger search
 document.getElementById("searchBtn").onclick = function (){
-    
     let inputField = document.getElementById("charSearchByName").value;
     if(inputField == ""){
         alert("The input field is empty. Please enter a character's name");
@@ -212,6 +211,12 @@ document.getElementById("searchBtn").onclick = function (){
         console.log("Input read. Event fired.");
     }
 }
+
+//close info card, display search input
+document.getElementById("close-card").addEventListener("click", ()=>{
+    document.getElementById("info-card").classList.toggle("displayCard");
+    document.getElementById("inputContainer").classList.toggle("hideItAll");
+} )
 
 // Add characters to roster
 const charNames = characters.map((char) => {
